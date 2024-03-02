@@ -3,38 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Iniciar Sesión con Google</title>
     <style>
         body {
             background-color: #1f1f1f; /* Color de fondo oscuro */
-            color: #cfcfcf; /* Color de texto blanco */
+            color: #ffffff; /* Color de texto blanco */
             font-family: Arial, sans-serif; /* Fuente sans-serif */
-            
-            display: flex; /* Uso de flexbox para diseño */
-        }
-
-       
-
-        .main-content {
-            flex: 1; /* Ocupa todo el espacio restante */
-            padding: 50px; /* Espaciado interior */
+            padding: 20px; /* Espaciado interior */
         }
 
         h1 {
             font-size: 24px; /* Tamaño de fuente */
             margin-bottom: 20px; /* Margen inferior */
-        }
-
-        p {
-            font-size: 16px; /* Tamaño de fuente */
-            margin-bottom: 10px; /* Margen inferior */
-        }
-
-        img {
-            max-width: 200px; /* Ancho máximo de la imagen */
-            height: auto; /* Altura automática */
-            margin-bottom: 20px; /* Margen inferior */
-            border-radius: 50%; /* Bordes curvos */
         }
 
         button {
@@ -44,30 +24,23 @@
             padding: 10px 20px; /* Espaciado interior */
             font-size: 16px; /* Tamaño de fuente */
             cursor: pointer; /* Cambio de cursor al pasar el ratón */
-            border-radius: 20px; /* Bordes curvos */
+            border-radius: 20px;
         }
 
         button:hover {
             background-color: #555555; /* Color de fondo del botón al pasar el ratón */
         }
 
-        button a, li a {
+        button a {
             text-decoration: none; /* Sin subrayado para el enlace dentro del botón */
             color: #ffffff; /* Color de texto blanco */
         }
     </style>
 </head>
 <body>
+    <h1>Iniciar Sesión</h1>
     
-
-    <div class="main-content">
-        <!-- Contenido principal -->
-        <h1>Bienvenido,</h1>
-        <p><b>Account</b>: {{ user_email }}</p>
-        <img src="{{ user_picture }}" alt="Perfil del usuario"> <br>
-
-        <!-- Enlace de logout -->
-        <button><a href="/logout">Log Out</a></button> 
-    </div>
+    <!-- Botón para iniciar sesión con Google -->
+    <a href="{{ google_login_url }}"><button>Continuar con Google</button></a>
 </body>
 </html>
