@@ -7,13 +7,13 @@ app = Flask(__name__)
 app.secret_key = 'tu_clave_secreta'
 
 # Reemplaza con tu ID de cliente de Google
-CLIENT_ID = '748742245469-pepitcpcecgtpt802q5n3uq40773b1bg.apps.googleusercontent.com'
+CLIENT_ID = 'YOUR_CLIENT_ID'
 # Reemplaza con tu secreto de cliente de Google
-CLIENT_SECRET = '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'
+CLIENT_SECRET = 'YOUR_CLIENT_SECRET'
 # Reemplaza con tu URI de redireccionamiento
-REDIRECT_URI = 'http://localhost:5000/oauth2callback'
+REDIRECT_URI = 'YOUR_URI_REDIRECT_FROM_GOOGLE_CLOUD_CONSOLE'
 # Correos electrónicos permitidos para iniciar sesión
-ALLOWED_EMAILS = ['johao.alvarado@pedidosya.com', 'johaoalvarado24@gmail.com', 'jalvarado@pedidosya.com']
+ALLOWED_EMAILS = ['email1@domain.com', 'email2@domain.com', 'email3@domain.com']
 
 
 @app.route('/login')
